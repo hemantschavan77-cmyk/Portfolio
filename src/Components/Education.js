@@ -28,10 +28,16 @@ function Education()
                         <td>61%</td>
                     </tr>
                     <tr>
-                        <td>B.C.A</td>
+                        <td>Bachlor of Computer Application</td>
                         <td>KBC North Maharashtra University</td>
                         <td> 2025</td>
                         <td>75%</td>
+                    </tr>
+                    <tr>
+                        <td>Masters of Computer Application</td>
+                        <td>G.H. Raisoni Collage of Engineering and Management</td>
+                        <td> 2025</td>
+                        <td>Appearing</td>
                     </tr>
                     <tr>
                         <td>Java Full Stack</td>

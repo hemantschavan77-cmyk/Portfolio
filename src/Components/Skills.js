@@ -8,7 +8,7 @@ function Skills()
             <Row>
                 <Col md={3}>
                 <Card className="p-3 text-center">
-                <h5 className="text-primary">HTML , CSS</h5>
+                <h5 className="text-primary">HTML , CSS, Bootstrap and React Js</h5>
                 <p>Modern UI , Responsive Design</p>
                 </Card>
                 </Col>

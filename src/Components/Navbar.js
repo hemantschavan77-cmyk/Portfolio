@@ -1,28 +1,42 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import "./Navbar.css";
 
-import { Navbar,Nav,Container, NavbarBrand } from "react-bootstrap";
-import { Link } from "react-router-dom";
-
-function NavbarCom()
-{
-    return(
-        <Navbar expand="lg" className="navbar-custom sticky-top bg-dark" variant="dark">
-            <Container>
-                <Navbar.Brand as={Link}>Hemant Chavan</Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbar-nav"/>
-                <Navbar.Collapse id="navbar-nav" className="justify-content-end">
-                    <Nav>
-                        <Nav.Link as={Link} to="/">HOME</Nav.Link>
-                        <Nav.Link as={Link} to="/Qualification/Education">QUALIFICATION</Nav.Link>
-                        <Nav.Link as={Link} to="/Qualification/Experience">EXPERIENCE</Nav.Link>
-                        <Nav.Link as={Link} to="/Skills">SKILLS</Nav.Link>
-                        <Nav.Link as={Link} to="/Contacts">CONTACTS</Nav.Link>
-                        <Nav.Link as={Link} to="/Signup">SIGNUP</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
-    )
+function NavbarCom() {
+  return (
+    <Navbar expand="lg" className="custom-navbar sticky-top">
+      <Container>
+        <Navbar.Brand as={NavLink} to="/" className="logo">
+          🚀 Hemant
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link as={NavLink} to="/" end className="nav-link-custom">
+              Home
+            </Nav.Link>
+            <Nav.Link
+              as={NavLink}
+              to="/Qualification/Education"
+              className="nav-link-custom"
+            >
+              Qualification
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/Qualification/Experience" className="nav-link-custom">
+              Experience
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/Skills" className="nav-link-custom">
+              Skills
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/Contacts" className="nav-link-custom">
+              Contacts
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
 export default NavbarCom;

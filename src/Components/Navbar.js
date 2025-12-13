@@ -8,7 +8,7 @@ function NavbarCom() {
     <Navbar expand="lg" className="custom-navbar sticky-top">
       <Container>
         <Navbar.Brand as={NavLink} to="/" className="logo">
-          🚀 Hemant
+          🚀 Hemant Chavan
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

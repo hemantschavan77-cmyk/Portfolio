@@ -1,38 +1,41 @@
 import React from "react";
-import { Container,Row,Col,Card } from "react-bootstrap";
-function Skills()
-{
-    return (
-        <Container className="m-5">
-            <h2 className="section-title">Skills</h2>
-            <Row>
-                <Col md={3}>
-                <Card className="p-3 text-center">
-                <h5 className="text-primary">HTML , CSS, Bootstrap and React Js</h5>
-                <p>Modern UI , Responsive Design</p>
-                </Card>
-                </Col>
-                <Col md={3}>
-                <Card className="p-3 text-center">
-                <h5 className="text-primary">Javascript</h5>
-                <p>ES6, DOM , Async/await</p>
-                </Card>
-                </Col>
-                <Col md={3}>
-                <Card className="p-3 text-center">
-                <h5 className="text-primary">C,CPP</h5>
-                <p>Functions ,Pointers , OOP</p>
-                </Card>
-                </Col>
-                <Col md={3}>
-                <Card className="p-3 text-center">
-                <h5 className="text-primary">Database</h5>
-                <p>SQL , NoSQL , MongoDB</p>
-                </Card>
-                </Col>
-            </Row>
-        </Container>
-    );
+import { Container, Row, Col, Card } from "react-bootstrap";
+
+function Skills() {
+  return (
+    <Container className="m-5">
+      <h2 className="section-title">Skills</h2>
+      <Row className="g-4">
+        <Col md={3}>
+          <Card className="p-4 text-center shadow-sm border-0 rounded-4 h-100 skill-card">
+            <h5 className="text-primary">Web Development</h5>
+            <p>HTML, CSS, Bootstrap, React.js</p>
+          </Card>
+        </Col>
+
+        <Col md={3}>
+          <Card className="p-4 text-center shadow-sm border-0 rounded-4 h-100 skill-card">
+            <h5 className="text-primary">Programming Languages</h5>
+            <p>C, C++, C#, Java, Python, JavaScript</p>
+          </Card>
+        </Col>
+
+        <Col md={3}>
+          <Card className="p-4 text-center shadow-sm border-0 rounded-4 h-100 skill-card">
+            <h5 className="text-primary">Databases</h5>
+            <p>MS Access, MySQL, Oracle, MongoDB</p>
+          </Card>
+        </Col>
+
+        <Col md={3}>
+          <Card className="p-4 text-center shadow-sm border-0 rounded-4 h-100 skill-card">
+            <h5 className="text-primary">Other Skills</h5>
+            <p>Problem Solving, Teamwork, Communication</p>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
+  );
 }
 
 export default Skills;

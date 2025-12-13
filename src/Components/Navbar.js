@@ -23,8 +23,12 @@ function NavbarCom() {
             >
               Qualification
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/Qualification/Experience" className="nav-link-custom">
-              Experience
+            <Nav.Link
+              as={NavLink}
+              to="/Qualification/Projects"
+              className="nav-link-custom"
+            >
+              Projects
             </Nav.Link>
             <Nav.Link as={NavLink} to="/Skills" className="nav-link-custom">
               Skills

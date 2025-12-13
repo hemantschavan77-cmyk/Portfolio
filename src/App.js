@@ -7,25 +7,26 @@ import Qualification from './Components/Qualification';
 import Skills from './Components/Skills';
 import NavbarCom from './Components/Navbar';
 import Education from './Components/Education';
-import Experience from './Components/Experience';
+import Projects from './Components/Projects';
 
 function App() {
   return (
-   <BrowserRouter>
-    <NavbarCom/>
-    <Routes>  
-      <Route path="/" element={<Home/>}/>
-      <Route path="Qualification" element={<Qualification/>}>
-      <Route index element={<Navigate to="Education" replace/>}/>
-      <Route path="Education" element={<Education/>}/>
-      <Route path="Experience" element={<Experience/>}/>
-    </Route>    
-                                  
-    <Route path="/Skills" element={<Skills/>}/>
-    <Route path="/Contacts" element={<Contacts/>} />
-    </Routes>
-  </BrowserRouter> 
-  )
+    <BrowserRouter>
+      <NavbarCom />
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="Qualification" element={<Qualification />}>
+          <Route index element={<Navigate to="Education" replace />} />
+          <Route path="Education" element={<Education />} />
+          <Route path="Projects" element={<Projects />} />
+        </Route>
+
+        <Route path="/Skills" element={<Skills />} />
+        <Route path="/Contacts" element={<Contacts />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

@@ -26,9 +26,11 @@ function Home() {
       <section className="about card">
         <h2>About Me</h2>
         <p>
-          Motivated MCA student and Full-Stack Java Developer in training with
-          experience in Java, C, C++, C#, Python, and JavaScript. Skilled in
-          responsive web applications and databases.
+          Motivated and aspiring Full-Stack Java Developer with hands-on experience in building responsive
+          web applications and backend services. Proficient in Java, Spring Boot, RESTful APIs, and modern
+          frontend frameworks like React.js. Experienced with relational and NoSQL databases, and passionate
+          about writing clean, scalable code and solving real-world problems.
+
         </p>
       </section>
     </div>

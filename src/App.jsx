@@ -1,12 +1,12 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import About from './components/About/About';
-import Skills from './components/Skills/Skills';
-import Education from './components/Education/Education';
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
+import Navbar from './Components/Navbar/Navbar';
+import Hero from './Components/Hero/Hero';
+import About from './Components/About/About';
+import Skills from './Components/Skills/Skills';
+import Education from './Components/Education/Education';
+import Projects from './Components/Projects/Projects';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (

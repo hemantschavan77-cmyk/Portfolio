@@ -1,0 +1,76 @@
+/* Global Design Tokens & Variables */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+:root {
+  /* Color Palette - Dark Surface Theme */
+  --bg-primary: #07090e;
+  --bg-secondary: #0d121f;
+  --bg-tertiary: #131b2e;
+  --bg-card: rgba(15, 23, 42, 0.65);
+  --bg-card-hover: rgba(30, 41, 59, 0.8);
+  --bg-glass: rgba(13, 18, 31, 0.75);
+  --bg-input: rgba(15, 23, 42, 0.85);
+
+  /* Foreground / Text Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  /* Accent & Gradients */
+  --accent-primary: #6366f1;
+  --accent-secondary: #8b5cf6;
+  --accent-tertiary: #3b82f6;
+  --accent-cyan: #06b6d4;
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #3b82f6 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #2563eb 100%);
+  --text-gradient: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #60a5fa 100%);
+  --border-gradient: linear-gradient(135deg, rgba(99, 102, 241, 0.5), rgba(139, 92, 246, 0.2), rgba(255, 255, 255, 0.05));
+
+  /* Glow Effects */
+  --accent-glow: 0 0 25px rgba(99, 102, 241, 0.35);
+  --accent-glow-strong: 0 0 45px rgba(139, 92, 246, 0.5);
+
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-card: rgba(255, 255, 255, 0.12);
+  --border-hover: rgba(139, 92, 246, 0.45);
+  --border-active: rgba(99, 102, 241, 0.7);
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Fluid Responsive Typography Scale */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
+  --text-sm: clamp(0.8125rem, 0.78rem + 0.3vw, 0.9375rem);
+  --text-base: clamp(0.9375rem, 0.9rem + 0.25vw, 1.0625rem);
+  --text-lg: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --text-3xl: clamp(1.875rem, 1.5rem + 1.8vw, 2.5rem);
+  --text-4xl: clamp(2.25rem, 1.8rem + 2.25vw, 3.25rem);
+  --text-5xl: clamp(2.75rem, 2.2rem + 2.75vw, 4.25rem);
+
+  /* Border Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+  --shadow-card-hover: 0 20px 40px -15px rgba(99, 102, 241, 0.25), 0 0 20px rgba(0, 0, 0, 0.8);
+  --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.25);
+
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Glass Blur */
+  --glass-blur: blur(16px);
+  --glass-blur-sm: blur(8px);
+}

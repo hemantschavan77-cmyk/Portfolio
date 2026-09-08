@@ -1,0 +1,226 @@
+/* Education Section Styles */
+.education-section {
+  padding: 100px 24px 80px 24px;
+  position: relative;
+}
+
+.education-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+.education-header {
+  text-align: center;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-title {
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  max-width: 680px;
+  line-height: 1.25;
+}
+
+/* Timeline Layout */
+.education-timeline {
+  position: relative;
+  padding-left: 36px;
+}
+
+.timeline-track {
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: 11px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    var(--accent-primary) 0%,
+    var(--accent-secondary) 50%,
+    rgba(99, 102, 241, 0.1) 100%
+  );
+  border-radius: var(--radius-full);
+}
+
+.timeline-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Individual Timeline Item */
+.timeline-item {
+  position: relative;
+}
+
+/* Node Dot */
+.timeline-node {
+  position: absolute;
+  top: 24px;
+  left: -36px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.node-outer {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 2px solid var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.4);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.node-inner {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.timeline-item:hover .node-outer {
+  transform: scale(1.25);
+  box-shadow: 0 0 14px var(--accent-secondary);
+  border-color: var(--accent-secondary);
+}
+
+/* Timeline Card */
+.timeline-card {
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.timeline-card:hover {
+  transform: translateX(4px);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.timeline-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.degree-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.timeline-badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.timeline-year-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+.timeline-score-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 11px;
+  background: rgba(99, 102, 241, 0.14);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: var(--radius-full);
+  color: #c7d2fe;
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.institution-name {
+  font-size: var(--text-base);
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Responsive Queries */
+@media (max-width: 640px) {
+  .education-section {
+    padding: 80px 16px 60px 16px;
+  }
+
+  .education-timeline {
+    padding-left: 28px;
+  }
+
+  .timeline-track {
+    left: 8px;
+  }
+
+  .timeline-node {
+    left: -28px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .node-outer {
+    width: 14px;
+    height: 14px;
+  }
+
+  .node-inner {
+    width: 4px;
+    height: 4px;
+  }
+
+  .timeline-card {
+    padding: 20px 18px;
+  }
+
+  .timeline-card-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .timeline-card:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-card,
+  .node-outer {
+    transform: none !important;
+    transition: none !important;
+  }
+}

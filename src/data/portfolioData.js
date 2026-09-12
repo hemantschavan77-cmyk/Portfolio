@@ -6,7 +6,7 @@ export const personalInfo = {
   greeting: "Hi, I'm Hemant ",
   profileImage: "/Profile4.jpg",
   about:
-    "Motivated and aspiring Full-Stack Java Developer with hands-on experience in building responsive web applications and backend services. Proficient in Java, Spring Boot, RESTful APIs, and modern frontend frameworks like React.js. Experienced with relational databases, and passionate about writing clean, scalable code and solving real-world problems."
+    "Full-Stack Java Developer with hands-on experience building web applications using Java, Spring Boot, REST APIs, React.js, and MySQL. Experienced in developing backend services, integrating relational databases using JPA/Hibernate, and building responsive frontend interfaces. Strong foundation in object-oriented programming, database management, and full-stack application development."
 };
 
 export const skillsData = [

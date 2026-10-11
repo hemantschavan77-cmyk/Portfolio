@@ -53,43 +53,29 @@ export const educationData = [
     percentage: "75%"
   },
   {
-    degree: "Full Stack Java (Course)",
+    degree: "Master in Full Stack Web Development with Java (Course)",
     institution: "ITVEDANT",
     yearOfPassing: "2026",
     percentage: "Completed"
-  },
-  {
-    degree: "Master of Computer Application",
-    institution: "G.H. Raisoni College",
-    yearOfPassing: "Expected 2027",
-    percentage: "Appearing"
   }
 ];
 
 export const projectsData = [
   {
     id: "recipe-hub",
-    title: "Recipe Hub",
+    title: "Recipe Hub(In Development)",
     description:
-      "A social recipe-sharing platform built with React.js where users can upload, explore, and search recipes based on their cravings. It features recipe categories, likes, and ratings, offering a social-media–like experience for food enthusiasts.",
+      "A social recipe-sharing platform is in development with React.js,Spring Boot and Mysql database where users can upload, explore, and search recipes based on their cravings. It features recipe categories, likes, offering a social-media–like experience for food enthusiasts.",
     githubUrl: "https://github.com/hemantschavan77-cmyk/Hemant-s-Recipie-Hub.git",
-    liveDemoUrl: "https://hemant-s-recipie-hub.vercel.app/"
+    liveDemoUrl: null
   },
   {
     id: "movie-ticket-booking",
-    title: "Movie Ticket Booking System",
+    title: "Movie Ticket Booking System (Academic)",
     description:
       "A desktop-based movie ticket booking system developed using C# and MS Access. The application enables users to select movies, showtimes, and book seats while securely storing booking data in the database.",
     githubUrl: "https://github.com/hemantschavan77-cmyk/MovieBookingApp.git",
     liveDemoUrl: null
-  },
-  {
-    id: "cinephile-quiz",
-    title: "Cinephile Quiz",
-    description:
-      "A fun and interactive movie-themed quiz application built using HTML and CSS. Designed for movie lovers to test their knowledge through a simple, clean, and engaging interface.",
-    githubUrl: null,
-    liveDemoUrl: "https://cinema-quiz-roan.vercel.app/"
   }
 ];
 
